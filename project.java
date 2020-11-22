@@ -100,7 +100,7 @@ class Gui extends JFrame implements ActionListener {
       ImageWriteParam param = writer.getDefaultWriteParam();
       
       param.setCompressionMode(ImageWriteParam.MODE_EXPLICIT);
-      param.setCompressionQuality(0.5f);
+      param.setCompressionQuality(0.5f);                                              // pass quality factor through variable.
       writer.write(null, new IIOImage(image, null, null), param);
       
       os.close();
